@@ -26,9 +26,14 @@ func Menu(args ...string) (err error) {
 			Function:    current,
 		},
 		{
-			Description: "Apply WindowsSpyBlocker NCSI",
+			Description: "Apply Debian NCSI",
 			Color:       color.FgHiYellow,
-			Function:    wsb,
+			Function:    debian,
+		},
+		{
+			Description: "Apply Firefox NCSI",
+			Color:       color.FgHiYellow,
+			Function:    firefox,
 		},
 		{
 			Description: "Apply Microsoft NCSI",
@@ -84,9 +89,14 @@ func current(args ...string) error {
 	return nil
 }
 
-func wsb(args ...string) (err error) {
+func debian(args ...string) (err error) {
 	defer timeu.Track(time.Now())
-	return setNcsi(config.Settings.Ncsi.Probes.Wsb)
+	return setNcsi(config.Settings.Ncsi.Probes.Debian)
+}
+
+func firefox(args ...string) (err error) {
+	defer timeu.Track(time.Now())
+	return setNcsi(config.Settings.Ncsi.Probes.Firefox)
 }
 
 func microsoft(args ...string) error {
@@ -205,7 +215,13 @@ func setNcsi(probe config.NcsiProbe) error {
 }
 
 func testHttpProbe(url string, content string) error {
-	response, err := http.Get(url)
+	client := &http.Client{
+		CheckRedirect: func(req *http.Request, via []*http.Request) error {
+			return http.ErrUseLastResponse
+		},
+	}
+
+	response, err := client.Get(url)
 	if err != nil {
 		return err
 	}

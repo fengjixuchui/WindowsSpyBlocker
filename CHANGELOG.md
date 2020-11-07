@@ -1,5 +1,41 @@
 # Changelog
 
+## 4.34.0 (2020/11/03)
+
+* Update hosts for extra and update rules
+* Update IPs for extra, spy and update rules
+* Move 51.11.168 to extra rules (#278)
+* Update deps
+
+## 4.33.1 (2020/09/07)
+
+* Disable UPX
+
+## 4.33.0 (2020/09/06)
+
+* Update IPs for extra, spy and update rules
+* Go 1.15
+* Update deps
+
+## 4.32.0 (2020/08/24)
+
+* [Docs website](https://crazy-max.github.io/WindowsSpyBlocker/) with mkdocs (#256)
+* Add EOL to blocking lists (#238)
+* Add Firefox (detect captive portals) NCSI (#251)
+* Remove deprectated `ncsi.txt`
+* Update deps
+
+## 4.31.1 (2020/08/02)
+
+* Update hosts for extra rules
+* Update IPs for extra, spy and update rules
+
+## 4.31.0 (2020/07/29)
+
+* Use Debian NCSI (#251)
+* Check NCSI web request redirect
+* Update deps
+
 ## 4.30.0 (2020/06/27)
 
 * Update hosts for extra and spy rules
