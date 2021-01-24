@@ -3,8 +3,8 @@ module github.com/crazy-max/WindowsSpyBlocker
 go 1.15
 
 require (
-	github.com/0xrawsec/golang-evtx v1.2.4
-	github.com/PuerkitoBio/goquery v1.6.0
+	github.com/0xrawsec/golang-evtx v1.2.5
+	github.com/PuerkitoBio/goquery v1.6.1
 	github.com/akyoto/color v1.8.11
 	github.com/cavaliercoder/grab v1.0.0
 	github.com/cevaris/ordered_map v0.0.0-20190319150403-3adeae072e73
@@ -13,7 +13,7 @@ require (
 	github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead
 	github.com/josephspurrier/goversioninfo v1.2.0
 	github.com/kevinburke/go-bindata v3.22.0+incompatible
-	github.com/magefile/mage v1.10.0
+	github.com/magefile/mage v1.11.0
 	github.com/mcuadros/go-version v0.0.0-20190830083331-035f6764e8d2
 	github.com/miekg/dns v1.1.35
 	github.com/pkg/errors v0.9.1
