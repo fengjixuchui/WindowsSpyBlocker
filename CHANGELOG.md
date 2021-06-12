@@ -1,5 +1,25 @@
 # Changelog
 
+## 4.36.0 (2021/05/16)
+
+* Update hosts for extra, spy and update rules
+* Update IPs for extra, spy and update rules
+* Bump github.com/go-ole/go-ole to 1.2.5
+* Bump github.com/miekg/dns from 1.1.40 to 1.1.42 (#331 #340)
+* Deploy docs on workflow dispatch or tag
+* Fix typo in doc
+
+## 4.35.0 (2021/03/10)
+
+* Update hosts for extra and spy rules
+* Update IPs for extra, spy and update rules
+* Update settings links
+* Go 1.16
+* Use default GOPROXY
+* Bump github.com/miekg/dns from 1.1.35 to 1.1.40 (#311 #323)
+* Bump github.com/PuerkitoBio/goquery from 1.6.0 to 1.6.1 (#303)
+* Bump github.com/0xrawsec/golang-evtx from 1.2.4 to 1.2.7 (#305 #315)
+
 ## 4.34.2 (2021/01/01)
 
 * Fix invalid IP (#299)
@@ -28,7 +48,7 @@
 
 ## 4.32.0 (2020/08/24)
 
-* [Docs website](https://crazy-max.github.io/WindowsSpyBlocker/) with mkdocs (#256)
+* [Docs website](https://crazymax.dev/WindowsSpyBlocker/) with mkdocs (#256)
 * Add EOL to blocking lists (#238)
 * Add Firefox (detect captive portals) NCSI (#251)
 * Remove deprectated `ncsi.txt`

@@ -1,5 +1,9 @@
 ## more info https://github.com/crazy-max/ghaction-github-labeler
-- # bot
+- # automerge
+  name: ":bell: automerge"
+  color: "8f4fbc"
+  description: ""
+- # block
   name: ":no_entry_sign: block"
   color: "d93f0b"
   description: ""
@@ -47,21 +51,13 @@
   name: ":pray: help wanted"
   color: "4caf50"
   description: ""
-- # hold
-  name: ":hand: hold"
-  color: "24292f"
-  description: ""
-- # improvement
-  name: "improvement"
-  color: "159818"
-  description: ""
 - # invalid
   name: ":no_entry_sign: invalid"
   color: "e6e6e6"
   description: ""
-- # maybe bug
-  name: ":interrobang: maybe bug"
-  color: "ff5722"
+- # investigate
+  name: ":mag: investigate"
+  color: "e6625b"
   description: ""
 - # needs more info
   name: ":thinking: needs more info"
@@ -78,6 +74,10 @@
 - # rules
   name: ":vertical_traffic_light: rules"
   color: "220901"
+  description: ""
+- # sponsor
+  name: ":sparkling_heart: sponsor"
+  color: "fedbf0"
   description: ""
 - # stale
   name: ":skull: stale"

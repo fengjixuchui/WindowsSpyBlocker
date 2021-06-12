@@ -1,7 +1,7 @@
 site_name: WindowsSpyBlocker
 site_description: Block spying and tracking on Windows
 site_author: CrazyMax
-site_url: https://crazy-max.github.io/WindowsSpyBlocker/
+site_url: https://crazymax.dev/WindowsSpyBlocker/
 edit_uri: edit/master/docs/
 docs_dir: docs
 
@@ -19,15 +19,29 @@ extra:
       link: https://github.com/crazy-max/WindowsSpyBlocker
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/crazyws
+  plausible:
+    server: plausible.re4per.com
+    domain: crazymax.dev/windowsspyblocker
 
 theme:
   name: material
   custom_dir: docs/_overrides
   language: en
   palette:
-    scheme: default
-    primary: indigo
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -69,10 +83,6 @@ plugins:
       prebuild_index: python
       lang:
         - en
-
-google_analytics:
-  - UA-12516800-13
-  - auto
 
 nav:
   - Home: index.md
