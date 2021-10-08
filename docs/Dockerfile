@@ -1,11 +1,12 @@
-FROM squidfunk/mkdocs-material:7.1.4
+FROM squidfunk/mkdocs-material:7.2.6
 
 RUN apk add --no-cache \
     git \
     git-fast-import \
-    openssh \
+    openssl \
   && apk add --no-cache --virtual .build gcc musl-dev \
   && pip install --no-cache-dir \
+    'lunr' \
     'markdown-include' \
     'mkdocs-awesome-pages-plugin' \
     'mkdocs-exclude' \

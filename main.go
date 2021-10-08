@@ -1,3 +1,6 @@
+//go:build windows
+// +build windows
+
 //go:generate go install github.com/kevinburke/go-bindata/go-bindata
 //go:generate go-bindata -pkg bindata -o app/bindata/bindata.go app/settings.json data/... app.conf
 //go:generate go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo
@@ -14,6 +17,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/menu"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/app"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/config"
+	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/windows"
 	"github.com/mcuadros/go-version"
 )
@@ -23,6 +27,12 @@ func init() {
 }
 
 func main() {
+	defer func() {
+		if err := recover(); err != nil {
+			print.QuitFatal(fmt.Errorf("%v\n", err))
+		}
+	}()
+
 	color.New(color.FgHiWhite).Println(config.AppName + " " + config.AppVersion)
 	color.New(color.FgHiWhite).Println(config.AppURL)
 

@@ -6,7 +6,6 @@
   <a href="https://github.com/crazy-max/WindowsSpyBlocker/releases/latest"><img src="https://img.shields.io/github/downloads/crazy-max/WindowsSpyBlocker/total.svg?style=flat-square" alt="Total downloads"></a>
   <a href="https://github.com/crazy-max/WindowsSpyBlocker/actions?workflow=build"><img src="https://img.shields.io/github/workflow/status/crazy-max/WindowsSpyBlocker/build?label=build&logo=github&style=flat-square" alt="Build Status"></a>
   <br /><a href="https://goreportcard.com/report/github.com/crazy-max/WindowsSpyBlocker"><img src="https://goreportcard.com/badge/github.com/crazy-max/WindowsSpyBlocker?style=flat-square" alt="Go Report"></a>
-  <a href="https://www.codacy.com/app/crazy-max/WindowsSpyBlocker"><img src="https://img.shields.io/codacy/grade/1e2eae1a40754d88b7956cf9bd30241b.svg?style=flat-square" alt="Code Quality"></a>
   <a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
   <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square" alt="Donate Paypal"></a>
 </p>
@@ -24,7 +23,7 @@ interactions between services and source or destination of traffic, rules are cr
 ## Projects using WindowsSpyBlocker
 
 * [BlackArch Linux](https://www.blackarch.org/): an Arch Linux-based penetration testing distribution for penetration testers and security researchers.
-* [Blackweb](https://github.com/maravento/blackweb): URLs Blacklist for Squid
+* [Blackweb](https://github.com/maravento/blackweb): URLs Blacklist for Squid.
 * [BlahDNS](https://blahdns.com/): A small hobby ads block dns project with doh, dot, dnscrypt support.
 * [DNSCrypt Proxy](https://dnscrypt.info/): A flexible DNS proxy, with support for encrypted DNS protocols.
 * [Energized Protection](https://energized.pro/): Let's make an annoyance free, better open internet, altogether!
@@ -32,9 +31,10 @@ interactions between services and source or destination of traffic, rules are cr
 * [LEDE Project](https://lede-project.org/): A Linux operating system based on OpenWrt.
 * [Mikrotik hosts parser](https://github.com/tarampampam/mikrotik-hosts-parser): An application that blocks "advertising" for routers based on RouterOS.
 * [NextDNS](https://github.com/nextdns): Block ads, trackers, malware and phishing websites, cryptominers and more.  
-* [OpenWrt adblock package](https://github.com/openwrt/packages/tree/master/net/adblock/files): DNS based ad/abuse domain blocking
+* [OpenWrt adblock package](https://github.com/openwrt/packages/tree/master/net/adblock/files): DNS based ad/abuse domain blocking.
 * [OPNsense](https://opnsense.org): An open source, easy-to-use and easy-to-build HardenedBSD based firewall and routing platform.
 * [pi-hole](https://pi-hole.net/): A black hole for Internet advertisements (designed for Raspberry Pi).
+* [privatezilla](https://github.com/builtbybel/privatezilla): Performs a privacy & security check of Windows 10.
 * [simplewall](https://github.com/henrypp/simplewall): Simple tool to configure Windows Filtering Platform (WFP).
 * [void-zones-tools](https://github.com/cyclaero/void-zones-tools): A list of void zones that can be readily feed into Unbound on FreeBSD.
 * [WPD](https://getwpd.com/): Customize Group Policy, Services and Tasks, responsible for data collection and sending, as you like.
