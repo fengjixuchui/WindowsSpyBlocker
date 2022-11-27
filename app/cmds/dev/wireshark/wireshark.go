@@ -180,9 +180,6 @@ func capture(args ...string) (err error) {
 
 	fmt.Println("\nTo stop the capture, press CTRL+D")
 
-	/*fmt.Print("Starting capture on ")
-	color.New(color.FgYellow).Printf("%s", networkItfSel.Name)
-	fmt.Printf(" in %s...", strings.TrimLeft(outputPcapng, pathu.Current))*/
 	command := exec.Command(path.Join(wiresharkLib.OutputPath, "dumpcap.exe"),
 		"-i", strconv.Itoa(config.App.Wireshark.Capture.Interface),
 		"-f", config.App.Wireshark.Capture.Filter,
@@ -275,7 +272,6 @@ func extractLog(args ...string) (err error) {
 	excluded := [][]string{}
 
 	fmt.Println("Analyzing events...")
-	//ioutil.WriteFile("wireshark.txt", []byte(cmdResult.Stdout), 0644)
 	lines := strings.Split(cmdResult.Stdout, "\n")
 	for _, line := range lines {
 		values := strings.Split(stringsu.RemoveExtraSpaces(line), " ")
@@ -307,8 +303,6 @@ func extractLog(args ...string) (err error) {
 		}
 
 		count, _ := strconv.Atoi(values[1])
-
-		//color.New(color.FgCyan).Println(host)
 		eventsHostsCount = append(eventsHostsCount, Event{
 			IP:     host,
 			Count:  count,
